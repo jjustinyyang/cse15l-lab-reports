@@ -1,5 +1,8 @@
 Week 1 Lab Report
 ---
+In this week's lab, we are going to install VSCode which is what we are going to use in this course as a code editor. 
+We are also going to remotely connecting our personal computer to the school's server computer using our course-specific account. 
+After that, we can play around with different commands using the VScode terminal.
 
 Installing VScode
 ---
