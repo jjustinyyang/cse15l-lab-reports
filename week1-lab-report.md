@@ -5,7 +5,7 @@ Installing VScode
 ---
 To install VScode, go to the following website, [https://code.visualstudio.com/](https://code.visualstudio.com/).
 
-There should be the version for most common operating systems (macOS and Windows).
+There should be the version for most common operating systems (macOS and Windows).<br> 
 
 Follow the instruction given from it after.
 
