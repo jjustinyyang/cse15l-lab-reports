@@ -3,12 +3,11 @@ Week 1 Lab Report
 
 Installing VScode
 ---
-To install VScode, go to the following website, [https://code.visualstudio.com/](https://code.visualstudio.com/).
+To install VScode, go to the following website, [https://code.visualstudio.com/](https://code.visualstudio.com/).<br> 
 There should be the version for most common operating systems (macOS and Windows).<br> 
 Follow the instruction given from it after.
 
-VScode should look like something like this once installed:
-
+VScode should look like something like this once installed:<br> 
 ![image](installing_vscode.png)
 
 Remotely Connecting
@@ -31,12 +30,11 @@ Trying Some Commands
 ---
 Try getting some practice with typing commands in the terminal. 
 
-Ex: 
-
-cd ~ <br> 
-ls -lat
-ls /home/linux/ieng6/cs15lwi23/cs15lwi23abc (replace abc with a groupmate's username)
-cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/
+Ex: <br>
+cd ~ <br>
+ls -lat <br>
+ls /home/linux/ieng6/cs15lwi23/cs15lwi23abc (replace abc with a groupmate's username) <br>
+cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/ <br>
 cat /home/linux/ieng6/cs15lwi23/public/hello.txt
 
 ![image](trying_some_commands.png)
