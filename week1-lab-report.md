@@ -35,7 +35,7 @@ Try getting some practice with typing commands in the terminal.
 
 Ex: 
 
-cd ~
+cd ~  <br> 
 ls -lat
 ls /home/linux/ieng6/cs15lwi23/cs15lwi23abc (replace abc with a groupmate's username)
 cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/
