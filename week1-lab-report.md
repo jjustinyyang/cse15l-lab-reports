@@ -18,14 +18,13 @@ Before attempt remotely connecting your computer to school server, you will need
 
 Go to this [link](https://sdacs.ucsd.edu/~icc/index.php).
 
-Open VScode terminal, Terminal > New Terminal.
+Open VScode terminal: Terminal > New Terminal.
 
 Type into terminal: "ssh" following your course-specific account.
 
-You should be prompt with your password. 
+You should be prompt with your password.
 
-After comfirming correct password, you are logged in remotely connecting with the school server.
-
+After comfirming correct password, you are logged in remotely connecting with the school server: <br>
 ![image](remotely_connecting.png)
 
 Trying Some Commands
