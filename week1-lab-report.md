@@ -23,7 +23,7 @@ Go to this [link](https://sdacs.ucsd.edu/~icc/index.php).
 
 Open VScode terminal: Terminal > New Terminal.
 
-Type into terminal: "ssh" following your course-specific account.
+Type into terminal: `ssh` following your course-specific account.
 
 You should be prompt with your password.
 
