@@ -21,6 +21,12 @@ Before attempt remotely connecting your computer to school server, you will need
 
 Go to this [link](https://sdacs.ucsd.edu/~icc/index.php).
 
+For Windows users, some extra steps: 
+
+- Install [**git** for Windows](https://gitforwindows.org/).
+
+- Follow steps in [this post](https://stackoverflow.com/a/50527994) to set default terminal to use the newly-installed **git bash** in Visual Studio Code.
+
 Open VScode terminal: Terminal > New Terminal.
 
 Type into terminal: `ssh` following your course-specific account.
