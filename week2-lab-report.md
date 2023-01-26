@@ -1,4 +1,4 @@
-Lab Report 3
+Week 3 Lab Report
 ---
 In today's lab, 
 
