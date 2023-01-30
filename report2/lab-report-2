@@ -8,7 +8,50 @@ Part 1
 
 Part 2
 ---
+A failure-inducing input for the buggy program:
+```
+@Test
+public void testReverseInPlace() {
+    int[] input2 = { 1, 2, 3 };
+    ArrayExamples.reverseInPlace(input2);
+    assertArrayEquals(new int[]{ 3, 2, 1 }, input2);
+}
+```
 
+An input that doesn’t induce a failure:
+```
+@Test
+public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+}
+```
+
+The symptom is that they return the same array even though I expected an revered array.
+![Image](lab3-symptom.png)
+
+There are two bugs I found that caused the same symptom of not revering the array.
+The first bug is that the for-loop looped through the entire array when instead it should be only half of the array because if you loop through the entire, it would just counter the swap and resulting in the same array.
+The second bug is that it only copies one side to the other. 
+Before fix:
+```
+static void reverseInPlace(int[] arr) {
+    for (int i = 0; i < arr.length; i += 1) {
+        arr[i] = arr[arr.length - i - 1];
+    }
+}
+```
+After fix:
+```
+static void reverseInPlace(int[] arr) {
+    for (int i = 0; i < arr.length / 2; i += 1) {
+        int temp = arr[i];
+        arr[i] = arr[arr.length - i - 1];
+        arr[arr.length - i - 1] = temp;
+    }
+}
+```
 
 Part 3
 ---
