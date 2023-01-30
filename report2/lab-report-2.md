@@ -1,7 +1,3 @@
-Lab Report 2
----
-In today's lab, 
-
 Part 1
 ---
 ![Image](string-server-code.png)
@@ -17,6 +13,7 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{ 3, 2, 1 }, input2);
 }
 ```
+When I have the input array of `{1, 2, 3}`, I would expect the `reverseInPlace()` to reverse the array and return the array `{3, 2, 1}`.
 
 An input that doesn’t induce a failure:
 ```
@@ -27,6 +24,7 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{ 3 }, input1);
 }
 ```
+The input array of only one element such as `{3}` will not induce a failure because there is only one element, the symptom of not reversing the array does not affect the output in this case.
 
 The symptom is that they return the same array even though I expected an revered array.
 ![Image](lab3-symptom.png)
