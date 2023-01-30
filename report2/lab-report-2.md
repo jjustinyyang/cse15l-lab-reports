@@ -31,7 +31,8 @@ The symptom is that they return the same array even though I expected an revered
 
 There are two bugs I found that caused the same symptom of not revering the array.
 The first bug is that the for-loop looped through the entire array when instead it should be only half of the array because if you loop through the entire, it would just counter the swap and resulting in the same array.
-The second bug is that it only copies one side to the other. 
+The second bug is that it only copies one side to the other.
+
 Before fix:
 ```
 static void reverseInPlace(int[] arr) {
@@ -40,6 +41,7 @@ static void reverseInPlace(int[] arr) {
     }
 }
 ```
+
 After fix:
 ```
 static void reverseInPlace(int[] arr) {
