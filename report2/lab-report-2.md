@@ -13,7 +13,7 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{ 3, 2, 1 }, input2);
 }
 ```
-When I have the input array of `{1, 2, 3}`, I would expect the `reverseInPlace()` to reverse the array and return the array `{3, 2, 1}`.
+When I have the input array of `{1, 2, 3}`, I would expect the `reverseInPlace()` to reverse the array and return the array `{3, 2, 1}`. This induced an error because the actual output was instead remained the same as `{1, 2, 3}`.
 
 An input that doesn’t induce a failure:
 ```
@@ -26,12 +26,14 @@ public void testReverseInPlace() {
 ```
 The input array of only one element such as `{3}` will not induce a failure because there is only one element, the symptom of not reversing the array does not affect the output in this case.
 
-The symptom is that they return the same array even though I expected an revered array.
+The symptom is that they return the same array even though I expected an reversed array.
+
+The failing result of JUnit test:
 ![Image](lab3-symptom.png)
 
-There are two bugs I found that caused the same symptom of not revering the array.
-The first bug is that the for-loop looped through the entire array when instead it should be only half of the array because if you loop through the entire, it would just counter the swap and resulting in the same array.
-The second bug is that it only copies one side to the other.
+There are two bugs I found that caused the same symptom of not reversing the array:
+- It only copies one side to the other, when what we want is actually swapping the front and the end.
+- The for-loop looped through the entire array when instead it should only be half of the array because if you loop through the entire it would just counter the swap and resulting in the same array.
 
 Before fix:
 ```
@@ -53,6 +55,8 @@ static void reverseInPlace(int[] arr) {
 }
 ```
 
+Notice that now the array is looped to the middle of the array and swapping the elements of the front and its corresponding end indexes.
+
 Part 3
 ---
-Something I learned from lab in week 2 and 3 that you didn’t know before is the 
+Something I learned from lab in week 2 and 3 that you didn’t know before is the stucture of URL's. I learned the meanings of different sections of the long chain of letters, slashes, and different symbols. I learned what domain, path, query, and fragment are, and what information they provide. I learned to use them in couple practice such as the number counter, search engine, and string appender.
