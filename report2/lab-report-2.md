@@ -21,6 +21,7 @@ Most of the things are the same as the above screenshot, we have same methods ca
 Part 2
 ---
 A failure-inducing input for the buggy program:
+
 ```
 @Test
 public void testReverseInPlace() {
@@ -29,6 +30,7 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{ 3, 2, 1 }, input2);
 }
 ```
+
 When I have the input array of `{1, 2, 3}`, I would expect the `reverseInPlace()` to reverse the array and return the array `{3, 2, 1}`. This induced an error because the actual output was instead remained the same as `{1, 2, 3}`.
 
 An input that doesn’t induce a failure:
@@ -40,11 +42,13 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{ 3 }, input1);
 }
 ```
+
 The input array of only one element such as `{3}` will not induce a failure because there is only one element, the symptom of not reversing the array does not affect the output in this case.
 
 The symptom is that they return the same array even though I expected an reversed array.
 
 The failing result of JUnit test:
+
 ![Image](lab3-symptom.png)
 
 There are two bugs I found that caused the same symptom of not reversing the array:
@@ -52,6 +56,7 @@ There are two bugs I found that caused the same symptom of not reversing the arr
 - The for-loop looped through the entire array when instead it should only be half of the array because if you loop through the entire it would just counter the swap and resulting in the same array.
 
 Before fix:
+
 ```
 static void reverseInPlace(int[] arr) {
     for (int i = 0; i < arr.length; i += 1) {
@@ -61,6 +66,7 @@ static void reverseInPlace(int[] arr) {
 ```
 
 After fix:
+
 ```
 static void reverseInPlace(int[] arr) {
     for (int i = 0; i < arr.length / 2; i += 1) {
