@@ -1,7 +1,12 @@
 Part 1
 ---
+This is the code to my string server:
 ![Image](string-server-code.png)
+
+This is the result when I first opened up the webpage without any messages added yet:
 ![Image](string-server-ss1.png)
+
+This is the result when I added a couple messages:
 ![Image](string-server-ss2.png)
 
 Part 2
