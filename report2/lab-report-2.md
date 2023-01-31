@@ -1,6 +1,8 @@
 Part 1
 ---
 ![Image](string-server-code.png)
+![Image](string-server-ss1.png)
+![Image](string-server-ss2.png)
 
 Part 2
 ---
