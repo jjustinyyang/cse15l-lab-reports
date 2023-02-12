@@ -35,7 +35,7 @@ public void testReverseInPlace() {
 }
 ```
 
-A passing JUnit test (red check with error message): 
+A passing JUnit test: 
 
 ![Image](bad-input.png)
 
@@ -52,11 +52,13 @@ public void testReverseInPlace() {
 }
 ```
 
-A passing JUnit test (green check): 
+A passing JUnit test: 
 
 ![Image](good-input.png)
 
 The input array of only one element such as `{3}` will not induce a failure because there is only one element, the symptom of not reversing the array does not affect the output in this case.
+
+Notice how a buggy program can sometime still result in a passing test depends on your input, so that is the reason why we need to write tests addressing different inputs to find the bug in the program.
 
 The symptom is that they return the same array even though I expected an reversed array.
 
