@@ -1,3 +1,4 @@
-Researching Commands
+Researching Commands - grep command line options
+===
+grep -e
 ---
-less, find, grep
