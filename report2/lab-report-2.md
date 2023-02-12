@@ -14,6 +14,10 @@ When I run my code, it creates the new Handler object which contains the method 
 
 This is the result when I added a couple messages:
 
+![Image](string-server-ss3.png)
+
+Now I can add one more with spaces:
+
 ![Image](string-server-ss2.png)
 
 Most of the things are the same as the above screenshot, we have same methods called and same arguments. What is different is that, when I have the correct paths and also the query, I run the statements inside the if statements and return the string that contains all the messages I added, so this case I have some extra values like `s` which is the string that I concatanate to everytime there is new string given to the url, and also `=` which is the spiter for the query indicating whatever is after that is the message. `/add message` and the `s` in front of `=` are also strings we check for if it is a valid url.
