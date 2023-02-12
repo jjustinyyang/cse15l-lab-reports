@@ -60,7 +60,7 @@ The symptom is that they return the same array even though I expected an reverse
 
 The failing result of JUnit test:
 
-![Image](bad-input.png)
+![Image](bad-input.png) <br>
 
 ![Image](lab3-symptom.png)
 
