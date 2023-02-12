@@ -35,9 +35,14 @@ public void testReverseInPlace() {
 }
 ```
 
+A passing JUnit test (red check with error message): 
+
+![Image](bad-input.png)
+
 When I have the input array of `{1, 2, 3}`, I would expect the `reverseInPlace()` to reverse the array and return the array `{3, 2, 1}`. This induced an error because the actual output was instead remained the same as `{1, 2, 3}`.
 
 An input that doesn’t induce a failure:
+
 ```
 @Test
 public void testReverseInPlace() {
@@ -46,6 +51,10 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{ 3 }, input1);
 }
 ```
+
+A passing JUnit test (green check): 
+
+![Image](good-input.png)
 
 The input array of only one element such as `{3}` will not induce a failure because there is only one element, the symptom of not reversing the array does not affect the output in this case.
 
