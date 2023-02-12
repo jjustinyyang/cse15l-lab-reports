@@ -35,7 +35,7 @@ public void testReverseInPlace() {
 }
 ```
 
-A passing JUnit test: 
+A failing JUnit test: 
 
 ![Image](bad-input.png)
 
