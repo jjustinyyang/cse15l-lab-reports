@@ -1,5 +1,5 @@
-Researching Commands - `grep` command line options
-===
+In this lab report I am going to research on the `grep` command line options. Examples of them would be provided using the files and directories from `./written_2` provided in class.
+
 `grep -w <string> <path/to/file>`
 ---
 
