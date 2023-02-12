@@ -1,6 +1,6 @@
-Researching Commands - grep command line options
+Researching Commands - `grep` command line options
 ===
-grep -w
+`grep -w <string> <path/to/file>`
 ---
 
 This command line option helps you search for a specific word with out giving you words that contains the word you are searching for.
@@ -11,21 +11,21 @@ For example, you want to find the word "the", words like "then" or "they", any w
 
 ![Image](-w2.png)
 
-grep -w
+`grep [<list or range of letters>] <path/to/file>`
 ---
 
 ![Image](-w1.png)
 
 ![Image](-w2.png)
 
-grep -w
+`grep ^<string> path/to/file`
 ---
 
 ![Image](-w1.png)
 
 ![Image](-w2.png)
 
-grep -w
+`grep -w`
 ---
 
 ![Image](-w1.png)
