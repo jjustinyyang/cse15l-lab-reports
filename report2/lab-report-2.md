@@ -4,7 +4,17 @@ This is the code for my string server:
 
 ![Image](string-server-code.png)
 
+This is what I type in as URL to get the first string printed:
 
+![Image](hello.png)
+
+StringServer.java above calls the Handler class which in turn calls the public method handleRequest where the argument is the URL of the server. By having the proper format for adding a string, `/add-message?s=<string>`, the URL handler then splits the query by “=” into an array where second half stores the actual message. This message is added to the arraylist that I created and eventually using a for-loop, printing the strings in the arraylist in order with a line in bewteen.
+
+Adding another string:
+
+![Image](world.png)
+
+This time, there is a word in the arraylist which is "hello". The same process happens with the Handler class and handleRequest method taking in the URL argument. Again, with proper format for adding string, it goes through the process of splitting the query with 0th as a checker index which the string has to equal "s" and 1st as where the actaul string message locates. The string "world is added to the arraylist and with the help of the for-loop, prints out the messages in the arraylist in order of adding with a new line after each onto the server.
 
 Part 2
 ---
