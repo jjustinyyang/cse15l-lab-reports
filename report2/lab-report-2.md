@@ -1,5 +1,6 @@
 Part 1
 ---
+
 This is the code for my string server:
 
 ![Image](string-server-code.png)
@@ -18,6 +19,7 @@ This time, there is a word in the arraylist which is "hello". The same process h
 
 Part 2
 ---
+
 A failure-inducing input for the buggy program:
 
 ```
@@ -59,6 +61,7 @@ The symptom is that they return the same array even though I expected an reverse
 The failing result of JUnit test:
 
 ![Image](bad-input.png)
+
 ![Image](lab3-symptom.png)
 
 We can see that with both the good and bad input, it errored on the second one as it didn't correctly reverse the array.
@@ -93,4 +96,5 @@ Notice that now the array is looped to the middle of the array and swapping the 
 
 Part 3
 ---
+
 Something I learned from lab in week 2 and 3 that you didn’t know before is the stucture of URL's. I learned the meanings of different sections of the long chain of letters, slashes, and different symbols. I learned what domain, path, query, and fragment are, and what information they provide. I learned to use them in couple practice such as the number counter, search engine, and string appender.
