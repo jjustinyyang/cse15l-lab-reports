@@ -9,7 +9,7 @@ For example, you want to find the word "the", words like "then" or "they", any w
 
 ![Image](grep-w1.png)
 
-![Image](-w2.png)
+![Image](grep-w2.png)
 
 `grep [<list or range of letters>] <path/to/file>`
 ---
