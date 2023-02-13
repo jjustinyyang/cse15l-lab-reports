@@ -7,27 +7,27 @@ This command line option helps you search for a specific word with out giving yo
 
 For example, you want to find the word "the", words like "then" or "they", any words containing "the" as part of their word is going to match. With this command line option, it will only give you lines containing "the".
 
-![Image](-w1.png)
+![Image](grep-w1.png)
 
 ![Image](-w2.png)
 
 `grep [<list or range of letters>] <path/to/file>`
 ---
 
-![Image](-w1.png)
+![Image](greplist1.png)
 
-![Image](-w2.png)
+![Image](greplist2.png)
 
 `grep ^<string> path/to/file`
 ---
 
-![Image](-w1.png)
+![Image](grep^1.png)
 
-![Image](-w2.png)
+![Image](grep^2.png)
 
-`grep -w`
+`grep -i <string> <path/to/file>`
 ---
 
-![Image](-w1.png)
+![Image](grep-i1.png)
 
-![Image](-w2.png)
+![Image](grep-i2.png)
