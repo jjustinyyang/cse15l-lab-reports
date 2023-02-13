@@ -22,7 +22,7 @@ I want the search the word "marriage", it gives me line with the word "marriagea
 `grep [<list or range of letters>] <path/to/file>`
 ---
 
-This command line option provide us to search for multiple letters in a file if we put them into a list. There are two choices, either look for individual letters or ranges of letters. I stick to [<list of letters>] for my examples, such as [aeiou]. While it can also be [<range of letters>], like [a-e], which search for a, b, c, d, and e. However, it is hard to find a range of letter using the text file as the path contains most of the letters and I don't want it to return every line. 
+This command line option provide us to search for multiple letters in a file if we put them into a list. There are two choices, either look for individual letters or ranges of letters. I stick to [list of letters] for my examples, such as [aeiou]. While it can also be [range of letters], like [a-e], which search for a, b, c, d, and e. However, it is hard to find a range of letter using the text file as the path contains most of the letters and I don't want it to return every line. 
 
 I created a text file containing all the paths with file names containing "WhereToGo" for easier demonstrating this command line option with examples.
 
