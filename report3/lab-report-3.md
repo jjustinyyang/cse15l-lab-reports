@@ -7,7 +7,7 @@ This command line option helps you search for a specific word with out giving yo
 
 For example, you want to find the word "the", words like "then" or "they", any words containing "the" as part of their word is going to match. With this command line option, it will only give you lines containing "the".
 
-Example 1: grep -w "survey" Canada-WhereToGo.txt
+Example 1:
 
 ![Image](grep-w1.png)
 
