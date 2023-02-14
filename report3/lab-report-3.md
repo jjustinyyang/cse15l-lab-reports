@@ -7,15 +7,46 @@ This command line option helps you search for a specific word with out giving yo
 
 For example, you want to find the word "the", words like "then" or "they", any words containing "the" as part of their word is going to match. With this command line option, it will only give you lines containing "the".
 
-Example 1:
+Example 1: grep -w "survey" Canada-WhereToGo.txt
 
 ![Image](grep-w1.png)
+
+- Before using `-w`:
+
+```
+The AGO's...
+The august...
+Also on the harbor...
+Alberta is...
+Drumheller's Dinosaur...
+```
+
+- After using `-w`:
+
+```
+The AGO's...
+The august...
+Also on the harbor...
+```
 
 I wanted try find the word "survey" in the `Canada-WhereToGo.txt` file. However, it is giving me paragraphs (technically lines because grep thinks a paragraph as a line) with the word "surveyors". On the bottom, I uses the command line option `-w` to limiting only to the word "survey", and not others containing it. Notice there is less printed out.
 
 Example 2:
 
 ![Image](grep-w2.png)
+
+- Before using `-w`
+
+```
+Since 1772...
+The rue St-Sulpice...
+```
+
+- After using `-w`
+
+```
+
+```
 
 I want the search the word "marriage", it gives me line with the word "marriageable". With `-w` it shows no results meaning there is no word as "marriage" in the passage.
 
