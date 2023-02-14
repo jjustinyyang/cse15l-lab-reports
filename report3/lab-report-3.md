@@ -21,7 +21,7 @@ Alberta is...
 Drumheller's Dinosaur...
 ```
 
-- `grep **-w** "survey" Canada-WhereToGo.txt`
+- `grep -w "survey" Canada-WhereToGo.txt`
 
 ```
 The AGO's...
@@ -42,7 +42,7 @@ Since 1772...
 The rue St-Sulpice...
 ```
 
-- `grep **-w** "marriage" Canada-WhereToGo.txt`
+- `grep -w "marriage" Canada-WhereToGo.txt`
 
 ```
 <nothing printed>
@@ -161,7 +161,7 @@ Example 1:
 
 ![Image](grep-i1.png)
 
-`grep **-i** "canada" justTxt.txt`
+`grep -i "canada" justTxt.txt`
 
 ```
 written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
@@ -174,7 +174,7 @@ Example 2:
 
 ![Image](grep-i2.png)
 
-`grep **-i** "calgary" Canada-WhereToGo.txt`
+`grep -i "calgary" Canada-WhereToGo.txt`
 
 ```
 Two suggested plans...
@@ -189,3 +189,12 @@ The area around...
 ```
     
 Similarly, when I look in the file `Canada-WhereToGo.txt` for the word "calgary" it doesn't show any result unless I put the case insensitive command line option `-i`.
+
+Conclusion
+---
+Four command line options I researched:
+
+- `grep -w <string> <path/to/file>`
+- `grep [<list or range of letters>] <path/to/file>`
+- `grep ^<string> path/to/file`
+- `grep -i <string> <path/to/file>`
