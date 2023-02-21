@@ -1,5 +1,7 @@
 In this lab report I am going to research on the `grep` command line options. Examples of them would be provided using the files and directories from `./written_2` provided in class.
 
+Source: I learned about these `grep` command line options from [this](https://www.youtube.com/watch?v=N05sWPgj-44&ab_channel=DistroTube) Youtube video.
+
 `grep -w <string> <path/to/file>`
 ---
 
