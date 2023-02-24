@@ -28,12 +28,6 @@ Read the warning, type the name of the repository you want to delete to verify d
 
 Fork the [lab 7 repository](https://github.com/ucsd-cse15l-w23/lab7).
 
-
-
-
-
-  
-
 (3) The real deal Start the timer!
 ---
 
@@ -105,9 +99,6 @@ Both `javac...` and `java...` will need exactly 6 up arrow : `<up><up><up><up><u
 ![Image](succeed_tests.png)
  
 This time, all the tests passed.
-
- 
- 
    
 
 (9) Commit and push the resulting change to your Github account
