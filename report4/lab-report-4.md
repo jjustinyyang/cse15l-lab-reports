@@ -12,9 +12,18 @@ Tasks From Competition
 
 (1) Setup Delete any existing forks of the repository you have on your account
 ---
+If previously forked the repository, delete it to ensure fairness of competition.
+
+Inside the repository, go to Setting --> Danger Zone --> Delete this repository
+
+Read the warning, type the name of the repository you want to delete to verify deleting the correct repository.
+
+[!image](delete_repository.png)
 
 (2) Setup Fork the repository
 ---
+
+[!image](fork_repository.png)
 
 (3) The real deal Start the timer!
 ---
