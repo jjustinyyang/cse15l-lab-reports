@@ -79,6 +79,8 @@ When we open the `ListExamplesTests.java` file on Github, we can see that the te
 ---
 Do the steps in step 6, which this time, we are already inside lab7 folder so no need to `cd` into it.
 
+To save time, I did six <up> keys, <up><up><up><up><up><up><enter>, to run both junit command lines.
+ 
 This time, it should pass all the tests.
 
 [!image](succeed_tests.png)
