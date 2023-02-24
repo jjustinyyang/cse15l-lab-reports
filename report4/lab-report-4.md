@@ -46,7 +46,7 @@ It should not prompt for password after the set up I did in lab.
 ---
 Clone the repository I forked using command line: `git clone git@github.com:jjustinyyang/lab7.git`.
 
-Again, with the set up I did in lab, I can 
+Again, with the set up I did in lab, I can clone the fork using `ssh`. The set up allows me to create a new SSH private key for accessing Github from my ieng6 account, which lets me commit and push my code later easier.
 
 ![Image](clone_repo.png)
 
@@ -62,40 +62,50 @@ and
 
 `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
 
-There is an error that we need to fix!
-
 ![Image](fail_tests.png)
+
+There is an error that we need to fix!
 
 (7) Edit the code file to fix the failing test
 ---
 
-When we open the `ListExamplesTests.java` file on Github, we can see that the test methods only run for merge1 method, so we can focus on that method to find the bug in it.
+When we open the `ListExamplesTests.java` file on Github, we can see that the test methods only run for `merge` method, so we can focus on that method to find the bug in it.
+
+`nano` inside the `ListExamples.java` file to look at / modify the code: `nano ListExamples.java`.
 
 ![Image](nano.png)
 
+I found where the bug is: while-loop for list2 after comparing two lists to add the remaining strings. The increasing index of list2 should be index2 not index1.
+
 ![Image](before_fix.png)
+
+I use the arrow keys to navigate to where the bug is and fixed it.
 
 ![Image](after_fix.png)
 
+After fixing the bug, I saved the file using `<Ctrl O>` and `<enter>`, exit `nano` using `<Ctrl X>`.
+
 (8) Run the tests, demonstrating that they now succeed
 ---
-Do the steps in step 6, which this time, we are already inside lab7 folder so no need to `cd` into it.
+Do the steps in step 6, but this time we are already inside lab7 folder so no need to `cd` into it.
 
-To save time, I did 6 up errow keys to get to the previously ran junit command lines: `<up><up><up><up><up><up><enter>`.
- 
-This time, it should pass all the tests.
+To save time, I did 6 up arrow keys to get to the previously ran junit command lines. 
+
+Both `javac...` and `java...` will need exactly 6 up arrow : `<up><up><up><up><up><up><enter>`.
 
 ![Image](succeed_tests.png)
+ 
+This time, all the tests passed.
 
 (9) Commit and push the resulting change to your Github account
 ---
-`git status`
+First, I use `git status` to see what are the changes to the folders I cloned (modification in `ListExamples.java` and new class files for the all the `.java` compiling). They are in red texts.
 
-`git add ListExamples.java`
+Next, I only want to push the changes inside `ListExamples.java`, so I will only add that file. Similar to checking only the box for it if it is web version GitHub: `git add ListExamples.java`. Now `ListExamples.java` is in green when I do `git status` again, meaning it is ready to push.
 
-`git commit -m "modified"`
+Then, I can commit the changes, can be known as saving what is going to be ready to push: `git commit -m "modified"`, with a "modified" message.
 
-`git push`
+Finally, `git push`, pushing the changes back to my GitHub account.
 
 ![Image](commit_push1.png)
  
