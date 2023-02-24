@@ -38,13 +38,15 @@ Log into remote server `ieng6`.
 
 Type into terminal command line: `ssh cs15lwi23auv@ieng6.ucsd.edu`
 
-It should not prompt for password after the set up I did in class today.
+It should not prompt for password after the set up I did in lab.
 
 [!image](login.png)
 
 (5) Clone your fork of the repository from your Github account
 ---
-Clone the repository I forked using command line: `git clone https://github.com/jjustinyyang/lab7.git`
+Clone the repository I forked using command line: `git clone git@github.com:jjustinyyang/lab7.git`.
+
+Again, with the set up I did in lab, I can 
 
 [!image](clone_repo.png)
 
@@ -79,7 +81,7 @@ When we open the `ListExamplesTests.java` file on Github, we can see that the te
 ---
 Do the steps in step 6, which this time, we are already inside lab7 folder so no need to `cd` into it.
 
-To save time, I did six <up> keys, <up><up><up><up><up><up><enter>, to run both junit command lines.
+To save time, I did 6 up errow keys to get to the previously ran junit command lines: `<up><up><up><up><up><up><enter>`.
  
 This time, it should pass all the tests.
 
@@ -89,10 +91,12 @@ This time, it should pass all the tests.
 ---
 `git status`
 
-`git add`
+`git add ListExamples.java`
 
-`git commit -m <message>`
+`git commit -m "modified"`
 
 `git push`
 
-[!image](commit_push.png)
+[!image](commit_push1.png)
+ 
+[!image](commit_push2.png)
