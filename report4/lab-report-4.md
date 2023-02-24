@@ -31,18 +31,16 @@ Fork the [lab 7 repository](https://github.com/ucsd-cse15l-w23/lab7).
 (3) The real deal Start the timer!
 ---
 
-![Image](timer.png)
-
 Phone, on-line, or any timer.
+
+![Image](timer.png)
 
 (4) Log into ieng6
 ---
 
 ![Image](login.png)
 
-Log into remote server `ieng6`.
-
-Type into terminal command line: `ssh cs15lwi23auv@ieng6.ucsd.edu`
+Log into remote server `ieng6`. Type in terminal: `ssh cs15lwi23auv@ieng6.ucsd.edu`
 
 It should not prompt for password after the set up I did in lab.
 
@@ -104,11 +102,6 @@ This time, all the tests passed.
 
 (9) Commit and push the resulting change to your Github account
 ---
-
-![Image](commit_push1.png)
- 
-![Image](commit_push2.png)
-
 First, I use `git status` to see what are the changes to the folders I cloned (modification in `ListExamples.java` and new class files for the all the `.java` compiling). They are in red texts.
 
 Next, I only want to push the changes inside `ListExamples.java`, so I will only add that file. Similar to checking only the box for it if it is web version GitHub: `git add ListExamples.java`. Now `ListExamples.java` is in green when I do `git status` again, meaning it is ready to push.
@@ -116,3 +109,7 @@ Next, I only want to push the changes inside `ListExamples.java`, so I will only
 Then, I can commit the changes, can be known as saving what is going to be ready to push: `git commit -m "modified"`, with a "modified" message.
 
 Finally, `git push`, pushing the changes back to my GitHub account.
+
+![Image](commit_push1.png)
+ 
+![Image](commit_push2.png)
