@@ -100,6 +100,9 @@ Both `javac...` and `java...` will need exactly 6 up arrow : `<up><up><up><up><u
  
 This time, all the tests passed.
 
+
+
+
 (9) Commit and push the resulting change to your Github account
 ---
 First, I use `git status` to see what are the changes to the folders I cloned (modification in `ListExamples.java` and new class files for the all the `.java` compiling). They are in red texts.
