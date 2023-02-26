@@ -84,7 +84,7 @@ Did it beforehand, I know the bug is: while-loop for list2 after comparing two l
 
 ![Image](before_fix.png)
 
-I use the arrow keys `<down>*rows<right>*cols`to navigate to where the bug is and fixed it: `<delete><2>`.
+Press and hold `<down>` and later `<right>` so it's at line 43, 13 letters right, where the bug is and fixed it: `<delete><2>`.
 
 ![Image](after_fix.png)
 
