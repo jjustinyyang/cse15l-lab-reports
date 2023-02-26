@@ -63,7 +63,7 @@ Inside the folder, compile all java files and run junit on the test file `ListEx
 
 `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
 
-and change the test file so I test `ListExamplesTests.java` file. note: no `.java` when running test.
+change test file so I test `ListExamplesTests.java` file. note: no `.java` when running test.
 
 `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
 
