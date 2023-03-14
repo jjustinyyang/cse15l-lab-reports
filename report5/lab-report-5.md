@@ -3,9 +3,12 @@ Intro
 
 This lab report is an extension to lab report 3, which I researched on the `grep` command line options. 
 
-In this lab report, I am researching on the `find` command line options. I chose this this lab report topic because it is interesting to see how useful the terminal commands are and learning this would help me access my files easier and faster.
+In this lab report, I am researching on the `find` command line options. I chose this this lab report topic 
+because it is interesting to see how useful the terminal commands are and learning this would help me access 
+my files easier and faster.
 
-Examples of them would be provided using the files and directories from `skill-demo1-data/written_2` provided in class.
+Examples of them would be provided using the files and directories from `skill-demo1-data/written_2` provided 
+in class.
 
 size option
 ---
@@ -62,7 +65,8 @@ This command line option find files that is a specific type.
 
 - example 1: `Justins-MacBook-Air:written_2 justinyang$ find -type d`
 
-I want to find all the directories inside `written_2` directory, I can do this command option with `d` for directory:
+I want to find all the directories inside `written_2` directory, I can do this command option with `d` for 
+directory:
 
 ```
 .
@@ -103,13 +107,15 @@ I want to find all the files inside `Castro` directory, I can do this command op
 time option
 ---
 
-This command line option find files that is modified within specific time in days, if use `-mtime`; minutes if use `-mmin`.
+This command line option find files that is modified within specific time in days, if use `-mtime`; minutes if 
+use `-mmin`.
 
 While `m` stands for `modified`, we can use `a` for `accessed` or `c` for `created`.
 
 - example 1: `find -mtime -1`
 
-I want to find all the files modified during the past 1 day. Since I clone the repo today, all the files should show up as they were modified same day as today. A lot of files...
+I want to find all the files modified during the past 1 day. Since I clone the repo today, all the files should 
+show up as they were modified same day as today. A lot of files...
 
 ```
 .
@@ -352,7 +358,8 @@ I want to find all the files modified during the past 1 day. Since I clone the r
 
 - example 2: `Justins-MacBook-Air:written_2 justinyang$ find . -mmin -20`
 
-I `nano` into the `chR.txt` file and modified its text a little. Now, if I try to find files I modified within the past 20 minutes with the above input, I would only get this file that I changed:
+I `nano` into the `chR.txt` file and modified its text a little. Now, if I try to find files I modified within 
+the past 20 minutes with the above input, I would only get this file that I changed:
 
 ```
 ./non-fiction/OUP/Castro/chR.txt
@@ -365,32 +372,41 @@ This command line option find files and perform specific actions on them.
 
 - example 1: `Justins-MacBook-Air:written_2 justinyang$ find ./non-fiction/OUP/Castro/ -name 'chA.txt' -exec rm {} \;`
 
-Combining with command line option `-name`, I can search for file with specific name `chA.txt` inside a given path to the target and do the remove action with `exec` which stands for execute. `{} \` is necessary syntax for this command line option.
+Combining with command line option `-name`, I can search for file with specific name `chA.txt` inside a given 
+path to the target and do the remove action with `exec` which stands for execute. `{} \` is necessary syntax 
+for this command line option.
 
-By running `ls ./non-fiction/OUP/Castro/` command, we can see what action was done. Notice the file `chA.txt` is removed:
+By running `ls ./non-fiction/OUP/Castro/` command, we can see what action was done. Notice the file `chA.txt` 
+is removed:
 
 before:
 
 ```
-chA.txt	chC.txt	chM.txt	chO.txt	chQ.txt	chV.txt	chY.txt chB.txt	chL.txt	chN.txt	chP.txt	chR.txt	chW.txt	chZ.txt
+chA.txt	chC.txt	chM.txt	chO.txt	chQ.txt	chV.txt	chY.txt 
+chB.txt	chL.txt	chN.txt	chP.txt	chR.txt	chW.txt	chZ.txt
 ```
 
 after:
 
 ```
-chB.txt	chC.txt	chL.txt	chM.txt	chN.txt	chO.txt	chP.txt	chQ.txt	chR.txt	chV.txt	chW.txt	chY.txt	chZ.txt
+chC.txt	chM.txt	chO.txt	chQ.txt	chV.txt	chY.txt chB.txt	
+chL.txt	chN.txt	chP.txt	chR.txt	chW.txt	chZ.txt
 ```
 
 - example 2: `find ./non-fiction/OUP/Castro/ -type f -exec rm {} \;`
 
-Similar to last example, combining with command line option `-type`, I can search for anything that is type file inside a given path and do the remove with `-exec`.
+Similar to last example, combining with command line option `-type`, I can search for anything that is type file 
+inside a given path and do the remove with `-exec`.
 
-Continue from last example, it should have files besides the one we removed before our execution of removing all file type. After running the input above, the directory which originally only has files should now be emtpy as files were all removed.
+Continue from last example, it should have files besides the one we removed before our execution of removing all 
+file type. After running the input above, the directory which originally only has files should now be emtpy as 
+files were all removed.
 
 before:
 
 ```
-chB.txt	chC.txt	chM.txt	chO.txt	chQ.txt	chV.txt	chY.txt chB.txt	chL.txt	chN.txt	chP.txt	chR.txt	chW.txt	chZ.txt
+chC.txt	chM.txt	chO.txt	chQ.txt	chV.txt	chY.txt chB.txt	
+chL.txt	chN.txt	chP.txt	chR.txt	chW.txt	chZ.txt
 ```
 
 after:
