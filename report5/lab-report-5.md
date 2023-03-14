@@ -357,15 +357,35 @@ exec option
 
 This command line option find files and perform specific actions on them.
 
-- example 1: `find -exec`
+- example 1: `Justins-MacBook-Air:written_2 justinyang$ find ./non-fiction/OUP/Castro/ -name 'chA.txt' -exec rm {} \;`
+
+By running `ls ./non-fiction/OUP/Castro/` command, we can see what action was done. Notice the file `chA.txt` is removed.
+
+before:
 
 ```
-
+chA.txt	chC.txt	chM.txt	chO.txt	chQ.txt	chV.txt	chY.txt chB.txt	chL.txt	chN.txt	chP.txt	chR.txt	chW.txt	chZ.txt
 ```
 
-- example 2: `find -exec`
+after:
 
+```
+chB.txt	chC.txt	chL.txt	chM.txt	chN.txt	chO.txt	chP.txt	chQ.txt	chR.txt	chV.txt	chW.txt	chY.txt	chZ.txt
+```
 
+- example 2: `find ./non-fiction/OUP/Castro/ -type f -exec rm {} \;`
+
+before:
+
+```
+chA.txt	chC.txt	chM.txt	chO.txt	chQ.txt	chV.txt	chY.txt chB.txt	chL.txt	chN.txt	chP.txt	chR.txt	chW.txt	chZ.txt
+```
+
+after:
+
+```
+<empty>
+```
 
 Conclusion
 ---
